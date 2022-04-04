@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+@layer base {
+  body {
+    @apply bg-[#191a1f] font-body  text-white;
+  }
+}
+.text-overflow-1 {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}
+.border-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.bg-mobi {
+  background-color: #2e2f35;
+}
+.active {
+  @apply translate-x-0;
+  @apply duration-500;
+}
+.border-right {
+  border-right: 1px solid #fff;
+}
